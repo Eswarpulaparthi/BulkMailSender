@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Input Text and Textarea</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <form class="col-md-6 offset-md-3" action="secondPage" method="POST">
+      <h3 class="text-center">Input Form</h3>
+      
+      <!-- Input Text Field -->
+      <div class="form-group">
+        <label for="inputText">Subject:</label>
+        <input type="text" class="form-control" id="inputText" placeholder="Enter text here" name="subject">
+      </div>
+      
+      <!-- Textarea Field -->
+      <div class="form-group">
+        <label for="textarea">Body (use [NAME] for personalization):</label>
+        <textarea class="form-control" id="textarea" rows="8" placeholder="Enter long text here" name="body"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

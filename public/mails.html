@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Bot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Ensure the form is centered vertically and horizontally */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .centered-form {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container centered-form">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>Recipients Credentials</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/firstPage">
+                    <div class="form-group">
+                        <label for="email">Emails</label>
+                        <input type="text" class="form-control" placeholder="Email of recipients" name="Res_emails">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Enter Names for Personalization(Optional)</label>
+                        <input type="text" class="form-control" placeholder="Names of recipients" name="Res_names">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
