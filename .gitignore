@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Production build
+build
+
+# Optional: Mac system files
+.DS_Store
+
+# Optional: Miscellaneous
+coverage/
